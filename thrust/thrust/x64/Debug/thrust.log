@@ -1,0 +1,129 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  G:\Utilisateurs\qannaf.as\Desktop\Qannaf\Installation\Cuda\thrust\thrust>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "G:\Utilisateurs\qannaf.as\Desktop\Qannaf\Installation\Cuda\thrust\thrust\kernel.cu" 
+  kernel.cu
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/internal_functional.h(326): warning C4244: '=': conversion from '__int64' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/function.h(125): note: see reference to function template instantiation 'void thrust::detail::unary_transform_functor<UnaryFunction>::operator ()<const _Tp>(Tuple)' being compiled
+          with
+          [
+              UnaryFunction=thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::plus<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::multiplies<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::argument<0>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,
+              _Tp=thrust::detail::tuple_of_iterator_references<__int64,int &,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>,
+              Tuple=thrust::detail::tuple_of_iterator_references<__int64,int &,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/function.h(125): note: see reference to function template instantiation 'void thrust::detail::unary_transform_functor<UnaryFunction>::operator ()<const _Tp>(Tuple)' being compiled
+          with
+          [
+              UnaryFunction=thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::plus<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::multiplies<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::argument<0>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,
+              _Tp=thrust::detail::tuple_of_iterator_references<__int64,int &,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>,
+              Tuple=thrust::detail::tuple_of_iterator_references<__int64,int &,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/system/detail/sequential/for_each.h(56): note: see reference to function template instantiation 'void thrust::detail::wrapped_function<UnaryFunction,void>::operator ()<thrust::detail::tuple_of_iterator_references<__int64,int &,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>(const Argument &) const' being compiled
+          with
+          [
+              UnaryFunction=thrust::detail::unary_transform_functor<thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::plus<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::multiplies<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::argument<0>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>,
+              Argument=thrust::detail::tuple_of_iterator_references<__int64,int &,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/system/detail/sequential/for_each.h(56): note: see reference to function template instantiation 'void thrust::detail::wrapped_function<UnaryFunction,void>::operator ()<thrust::detail::tuple_of_iterator_references<__int64,int &,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>(const Argument &) const' being compiled
+          with
+          [
+              UnaryFunction=thrust::detail::unary_transform_functor<thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::plus<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::multiplies<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::argument<0>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>,
+              Argument=thrust::detail::tuple_of_iterator_references<__int64,int &,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/for_each.inl(44): note: see reference to function template instantiation 'InputIterator thrust::system::detail::sequential::for_each<thrust::system::cpp::detail::tag,InputIterator,UnaryFunction>(thrust::system::detail::sequential::execution_policy<thrust::system::cpp::detail::tag> &,InputIterator,InputIterator,UnaryFunction)' being compiled
+          with
+          [
+              InputIterator=thrust::zip_iterator<thrust::tuple<thrust::counting_iterator<__int64,thrust::use_default,thrust::use_default,__int64>,thrust::detail::normal_iterator<int *>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,
+              UnaryFunction=thrust::detail::unary_transform_functor<thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::plus<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::multiplies<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::argument<0>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/system/detail/generic/transform.inl(53): note: see reference to function template instantiation 'InputIterator thrust::for_each<DerivedPolicy,thrust::zip_iterator<thrust::tuple<thrust::counting_iterator<__int64,thrust::use_default,thrust::use_default,__int64>,OutputIterator,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::detail::unary_transform_functor<UnaryFunction>>(const thrust::detail::execution_policy_base<DerivedPolicy> &,InputIterator,InputIterator,thrust::detail::unary_transform_functor<UnaryFunction>)' being compiled
+          with
+          [
+              InputIterator=thrust::zip_iterator<thrust::tuple<thrust::counting_iterator<__int64,thrust::use_default,thrust::use_default,__int64>,thrust::detail::normal_iterator<int *>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,
+              DerivedPolicy=thrust::system::cpp::detail::tag,
+              OutputIterator=thrust::detail::normal_iterator<int *>,
+              UnaryFunction=thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::plus<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::multiplies<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::argument<0>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/transform.inl(44): note: see reference to function template instantiation 'OutputIterator thrust::system::detail::generic::transform<Derived,InputIterator,OutputIterator,UnaryFunction>(thrust::execution_policy<Derived> &,InputIterator,InputIterator,OutputIterator,UnaryFunction)' being compiled
+          with
+          [
+              OutputIterator=thrust::detail::normal_iterator<int *>,
+              Derived=thrust::system::cpp::detail::tag,
+              InputIterator=thrust::counting_iterator<__int64,thrust::use_default,thrust::use_default,__int64>,
+              UnaryFunction=thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::plus<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::multiplies<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::argument<0>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/system/detail/generic/tabulate.inl(51): note: see reference to function template instantiation 'OutputIterator thrust::transform<DerivedPolicy,thrust::counting_iterator<__int64,thrust::use_default,thrust::use_default,__int64>,ForwardIterator,UnaryOperation>(const thrust::detail::execution_policy_base<DerivedPolicy> &,InputIterator,InputIterator,OutputIterator,UnaryFunction)' being compiled
+          with
+          [
+              OutputIterator=thrust::detail::normal_iterator<int *>,
+              DerivedPolicy=thrust::system::cpp::detail::tag,
+              ForwardIterator=thrust::detail::normal_iterator<int *>,
+              UnaryOperation=thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::plus<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::multiplies<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::argument<0>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,
+              InputIterator=thrust::counting_iterator<__int64,thrust::use_default,thrust::use_default,__int64>,
+              UnaryFunction=thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::plus<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::multiplies<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::argument<0>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/tabulate.inl(37): note: see reference to function template instantiation 'void thrust::system::detail::generic::tabulate<Derived,ForwardIterator,UnaryOperation>(thrust::execution_policy<Derived> &,ForwardIterator,ForwardIterator,UnaryOperation)' being compiled
+          with
+          [
+              Derived=thrust::system::cpp::detail::tag,
+              ForwardIterator=thrust::detail::normal_iterator<int *>,
+              UnaryOperation=thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::plus<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::multiplies<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::argument<0>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/system/detail/generic/sequence.inl(66): note: see reference to function template instantiation 'void thrust::tabulate<DerivedPolicy,ForwardIterator,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::plus<void>>,thrust::detail::functional::value<T>,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::multiplies<void>>,thrust::detail::functional::value<T>,thrust::detail::functional::actor<thrust::detail::functional::argument<0>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>>(const thrust::detail::execution_policy_base<DerivedPolicy> &,ForwardIterator,ForwardIterator,UnaryOperation)' being compiled
+          with
+          [
+              DerivedPolicy=thrust::system::cpp::detail::tag,
+              ForwardIterator=thrust::detail::normal_iterator<int *>,
+              T=int,
+              UnaryOperation=thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::plus<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::composite<thrust::detail::functional::transparent_binary_operator<thrust::multiplies<void>>,thrust::detail::functional::value<int>,thrust::detail::functional::actor<thrust::detail::functional::argument<0>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type,thrust::null_type>>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/sequence.inl(68): note: see reference to function template instantiation 'void thrust::system::detail::generic::sequence<Derived,ForwardIterator,T>(thrust::execution_policy<Derived> &,ForwardIterator,ForwardIterator,T,T)' being compiled
+          with
+          [
+              Derived=thrust::system::cpp::detail::tag,
+              ForwardIterator=thrust::detail::normal_iterator<int *>,
+              T=int
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/system/detail/generic/sequence.inl(52): note: see reference to function template instantiation 'void thrust::sequence<DerivedPolicy,ForwardIterator,T>(const thrust::detail::execution_policy_base<DerivedPolicy> &,ForwardIterator,ForwardIterator,T,T)' being compiled
+          with
+          [
+              DerivedPolicy=thrust::system::cpp::detail::tag,
+              ForwardIterator=thrust::detail::normal_iterator<int *>,
+              T=int
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/sequence.inl(54): note: see reference to function template instantiation 'void thrust::system::detail::generic::sequence<Derived,ForwardIterator,T>(thrust::execution_policy<Derived> &,ForwardIterator,ForwardIterator,T)' being compiled
+          with
+          [
+              Derived=thrust::system::cpp::detail::tag,
+              ForwardIterator=thrust::detail::normal_iterator<int *>,
+              T=int
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/system/detail/generic/sequence.inl(41): note: see reference to function template instantiation 'void thrust::sequence<DerivedPolicy,ForwardIterator,int>(const thrust::detail::execution_policy_base<DerivedPolicy> &,ForwardIterator,ForwardIterator,T)' being compiled
+          with
+          [
+              DerivedPolicy=thrust::system::cpp::detail::tag,
+              ForwardIterator=thrust::detail::normal_iterator<int *>,
+              T=int
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/sequence.inl(41): note: see reference to function template instantiation 'void thrust::system::detail::generic::sequence<Derived,ForwardIterator>(thrust::execution_policy<Derived> &,ForwardIterator,ForwardIterator)' being compiled
+          with
+          [
+              Derived=thrust::system::cpp::detail::tag,
+              ForwardIterator=thrust::detail::normal_iterator<int *>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/sequence.inl(82): note: see reference to function template instantiation 'void thrust::sequence<DerivedPolicy,ForwardIterator>(const thrust::detail::execution_policy_base<DerivedPolicy> &,ForwardIterator,ForwardIterator)' being compiled
+          with
+          [
+              DerivedPolicy=thrust::system::cpp::detail::tag,
+              ForwardIterator=thrust::detail::normal_iterator<int *>
+          ]
+  G:/Utilisateurs/qannaf.as/Desktop/Qannaf/Installation/Cuda/thrust/thrust/kernel.cu(72): note: see reference to function template instantiation 'void thrust::sequence<thrust::detail::normal_iterator<int *>>(ForwardIterator,ForwardIterator)' being compiled
+          with
+          [
+              ForwardIterator=thrust::detail::normal_iterator<int *>
+          ]
+     Creating library G:\Utilisateurs\qannaf.as\Desktop\Qannaf\Installation\Cuda\thrust\x64\Debug\thrust.lib and object G:\Utilisateurs\qannaf.as\Desktop\Qannaf\Installation\Cuda\thrust\x64\Debug\thrust.exp
+  thrust.vcxproj -> G:\Utilisateurs\qannaf.as\Desktop\Qannaf\Installation\Cuda\thrust\x64\Debug\thrust.exe
